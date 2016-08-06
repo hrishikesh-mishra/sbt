@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>formvalidation</module>
+        <module>jmsmessaging</module>
     </modules>
 
     <parent>
