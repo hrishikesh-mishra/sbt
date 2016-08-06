@@ -11,6 +11,8 @@
     <modules>
         <module>formvalidation</module>
         <module>jmsmessaging</module>
+        <module>batchprocessing</module>
+        <module>securingweb</module>
     </modules>
 
     <parent>
