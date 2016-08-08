@@ -16,6 +16,7 @@
         <module>hypermedia</module>
         <module>integratingdata</module>
         <module>circuitbreaker</module>
+        <module>db-count-starter</module>
     </modules>
 
     <parent>

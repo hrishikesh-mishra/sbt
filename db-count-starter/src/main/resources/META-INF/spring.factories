@@ -1,0 +1,2 @@
+# Is not required when EnableDbCounting annotation present.
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.hrishikeshmishra.sbt.dbcount.DbCountAutoConfiguration
