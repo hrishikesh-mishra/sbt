@@ -3,6 +3,7 @@ package com.hrishikeshmishra.sbt.bookpub;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
@@ -20,5 +21,9 @@ public class WebConfiguration  extends WebMvcConfigurerAdapter{
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
+    }
+
+    public void addResourceHandlers(ResourceHandlerRegistry registry){
+        registry.addResourceHandler("/internal/**").addResourceLocations("classpath:/");
     }
 }
