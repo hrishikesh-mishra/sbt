@@ -23,7 +23,10 @@ public class WebConfiguration  extends WebMvcConfigurerAdapter{
         registry.addInterceptor(localeChangeInterceptor());
     }
 
+    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry){
         registry.addResourceHandler("/internal/**").addResourceLocations("classpath:/");
     }
+
+
 }
